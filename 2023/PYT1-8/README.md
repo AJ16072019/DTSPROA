@@ -1,6 +1,11 @@
 # Aplikasi Hitung Volume Benda
 Aplikasi ini dapat menghitung volume dari berbagai bentuk benda ruang seperti balok, bola, dan tabung. Aplikasi ini dibuat menggunakan library PyQt5 untuk GUI dan modul math untuk menghitung volume dari benda ruang.
 
+# Aplikasi ini dibuat dan disiapkan oleh PYT1-8 2023 Kelompok 2:
+- 1985590840-1121 - BADRUS SULAIMAN
+- 1985590840-1306 - ANDRY JULIAWAN
+- 1985590840-1307 - DWIKI FAJAR ISMAIL
+
 ## Cara Menggunakan Aplikasi
 1. Pastikan komputer Anda sudah terinstall Python dan library PyQt5.
 2. Download atau clone repository ini ke dalam komputer Anda.
@@ -28,8 +33,3 @@ Hasil volume akan ditampilkan pada label "Hasil". Hasil akan ditampilkan dengan 
 - README.md: dokumen ini
 - volume_benda.py: script utama untuk menjalankan aplikasi
 - calculator_icon.png: gambar icon kalkulator yang ditampilkan pada title bar aplikasi
-
-# Aplikasi ini dibuat dan disiapkan oleh PYT1-8 2023 Kelompok 2:
-- 1985590840-1121 - BADRUS SULAIMAN
-- 1985590840-1306 - ANDRY JULIAWAN
-- 1985590840-1307 - DWIKI FAJAR ISMAIL
