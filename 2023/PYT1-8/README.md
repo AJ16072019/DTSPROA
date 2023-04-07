@@ -31,5 +31,5 @@ Hasil volume akan ditampilkan pada label "Hasil". Hasil akan ditampilkan dengan 
 - PyQt5
 ## File dan Direktori
 - README.md: dokumen ini
-- Kalkulator Volume Benda PyQT5 v5.py: script utama untuk menjalankan aplikasi
+- Kalkulator Volume Benda.py: script utama untuk menjalankan aplikasi
 - calculator_icon.png: gambar icon kalkulator yang ditampilkan pada title bar aplikasi
