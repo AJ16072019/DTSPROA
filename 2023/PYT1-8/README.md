@@ -10,7 +10,7 @@ Aplikasi ini dapat menghitung volume dari berbagai bentuk benda ruang seperti ba
 1. Pastikan komputer Anda sudah terinstall Python dan library PyQt5.
 2. Download atau clone repository ini ke dalam komputer Anda.
 3. Buka terminal atau command prompt pada direktori repository ini.
-4. Ketikkan perintah berikut untuk menjalankan aplikasi: python volume_benda.py
+4. Ketikkan perintah berikut untuk menjalankan aplikasi: python kalkulator_volume_benda.py
 5. Aplikasi akan tampil di layar dan Anda dapat mulai menggunakannya.
 
 ## Fitur Aplikasi
