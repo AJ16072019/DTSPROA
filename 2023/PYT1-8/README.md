@@ -1,6 +1,9 @@
 # Aplikasi Hitung Volume Benda
 Aplikasi ini dapat menghitung volume dari berbagai bentuk benda ruang seperti balok, bola, dan tabung. Aplikasi ini dibuat menggunakan library PyQt5 untuk GUI dan modul math untuk menghitung volume dari benda ruang.
 
+![image](https://user-images.githubusercontent.com/52948442/230623386-55f557be-83b6-46b3-9bb9-9bfde4bc6ad7.png)
+
+
 ## Aplikasi ini dibuat dan disiapkan oleh PYT1-8 2023 Kelompok 2:
 - 1985590840-1121 - BADRUS SULAIMAN
 - 1985590840-1306 - ANDRY JULIAWAN
