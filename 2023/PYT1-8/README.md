@@ -29,7 +29,7 @@ Hasil volume akan ditampilkan pada label "Hasil". Hasil akan ditampilkan dengan 
 - volume_benda.py: script utama untuk menjalankan aplikasi
 - calculator_icon.png: gambar icon kalkulator yang ditampilkan pada title bar aplikasi
 
-Aplikasi ini dibuat dan disiapkan oleh PYT1-8 2023 Kelompok 2:
+# Aplikasi ini dibuat dan disiapkan oleh PYT1-8 2023 Kelompok 2:
 - 1985590840-1121 - BADRUS SULAIMAN
 - 1985590840-1306 - ANDRY JULIAWAN
 - 1985590840-1307 - DWIKI FAJAR ISMAIL
