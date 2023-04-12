@@ -2,6 +2,10 @@
 import math
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QLineEdit, QPushButton, QVBoxLayout
+import locale
+
+# set local Indonesia untuk pemformatan angka dan digit grouping
+locale.setlocale(locale.LC_ALL, 'id_ID')
 
 # Membuat kelas VolumeBenda yang merupakan turunan dari kelas QWidget
 class VolumeBenda(QWidget):
@@ -40,6 +44,10 @@ class VolumeBenda(QWidget):
         self.rb_tabung = QRadioButton('Tabung', self)
         self.rb_tabung.move(20, 80)
         self.rb_tabung.clicked.connect(lambda: self.show_hide(3, 4, hide=[0, 1, 2]))
+
+        self.rb_kerucut = QRadioButton('Kerucut', self)
+        self.rb_kerucut.move(20, 100)
+        self.rb_kerucut.clicked.connect(lambda: self.show_hide(3, 4, hide=[0, 1, 2]))
 
         # Menambahkan button Hitung dan mengatur posisinya
         self.btn_hitung = QPushButton('Hitung', self)
@@ -80,6 +88,12 @@ class VolumeBenda(QWidget):
                 volume = math.pi * jari_jari ** 2 * tinggi
             except ValueError:
                 valid_input = False
+        elif self.rb_kerucut.isChecked():
+            try:
+                jari_jari, tinggi = [float(getattr(self, widget['name']).text().replace(',', '.')) for widget in self.widgets[3:]]
+                volume = 1/3 * math.pi * jari_jari ** 2 * tinggi
+            except ValueError:
+                valid_input = False
         else:
             volume = 0
 
@@ -89,8 +103,11 @@ class VolumeBenda(QWidget):
             self.lbl_hasil.setFixedWidth(300)
             return
 
-        # Menampilkan hasil volume dengan format angka desimal dua digit dan font ukuran 20pt, tebal, dan warna hitam
-        self.lbl_hasil.setText(f'Hasil: {volume:.4f}')
+        # ubah format indonesia
+        volume_str = locale.format_string('%.2f', volume, grouping=True)
+
+        # Menampilkan hasil volume font ukuran 20pt, tebal, dan warna hitam
+        self.lbl_hasil.setText(f'Hasil: {volume_str}')
         self.lbl_hasil.adjustSize()
 
 # Script ini untuk mengaktifkan aplikasi ini
